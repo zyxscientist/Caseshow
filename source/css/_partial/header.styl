@@ -1,7 +1,6 @@
 #header
   font-size: 14px
   position: relative
-  border-bottom: 1px solid color-border
   &.mobile-on
     #main-nav,
     #sub-nav
@@ -10,32 +9,53 @@
 #header-outer
   height: 100%
   position: relative
+  @media mq-mobile
+    border-bottom: 1px solid #FCFCFC;
+    -webkit-box-shadow: 0 1px 4px 0 rgba(0,0,0,0.14)
+    -webkit-border-radius: 2px
+    box-shadow: 0 1px 8px 0 rgba(0,0,0,0.20)
+    z-index: 100
+
 
 #header-inner
   position: relative
   overflow: hidden
+  @media mq-mobile
+    margin-top: 0px
+   
+
 
 #main-nav
   float: left
   margin-left: -15px
+  font-family: PT Serif,STZhongsong,'华文宋体','Microsoft Yahei',serif
 
 $nav-link
   float: left
   color: black
   text-decoration: none
   transition: opacity 0.2s
-  display: block
-  padding: 20px 15px
+  padding: 39px 15px
+
+.menu-li
+  list-style-type: none
+  display: inline
+  @media mq-mobile
+    display: block
+    margin: 25px 0 25px 0
+    
 
 .main-nav-link
   @extend $nav-link
   font-weight: 600
   @media mq-mobile
     float: none
+    padding: 0px 60px
     text-align: center
 
 #main-nav-toggle
   @extend $nav-link
+  padding: 15px 15px
   display: none
   font-size: 16px
   margin-left: -15px
@@ -44,14 +64,25 @@ $nav-link
     content: "\f0c9"
   @media mq-mobile
     display: block
+    margin-left: 0px
 
 #logo
   float:left
   @media mq-mobile
     float: none
-    margin: 0 auto
+    font-size: 28px
+    margin: 8px 0px 3px 0px
+    padding-left: 10px
     display: block
+    vertical-align: top
     background-position: center
+
+#subtitle-text
+  float: none
+  display: block
+  @media mq-mobile
+    font-size: 0px
+    margin: 0 0 0 0
 
 #sub-nav
   float: right

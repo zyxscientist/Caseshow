@@ -1,4 +1,4 @@
-<article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %>" itemscope itemprop="blogPost">
+<article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %> + post-box pure-u-1 pure-u-sm-1-2 pure-u-md-2-3 <%= post.size %>" itemscope itemprop="blogPost">
   <div class="article-inner">
     <%- partial('post/gallery') %>
     <% if (post.link || post.title){ %>
@@ -8,6 +8,11 @@
     <% } %>
     <div class="article-meta">
       <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
+        <% if (!index || post.tags.length){ %>
+          <div class="article-tag-list-link-<%= post.color %>">
+            <%- partial('post/tag') %>
+          </div>
+        <% } %>
       <%- partial('post/category') %>
       <% if (post.comments && config.disqus_shortname){ %>
         <div class="article-comment-link-wrap">
@@ -32,11 +37,6 @@
         <h3><%= __('article.contents') %></h3>
         <%- toc(post.content) %>
       </div>
-    <% } %>
-    <% if (!index || post.tags.length){ %>
-      <footer class="article-footer">
-        <%- partial('post/tag') %>
-      </footer>
     <% } %>
   </div>
   <% if (!index){ %>

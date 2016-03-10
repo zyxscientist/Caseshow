@@ -3,15 +3,16 @@
     <div id="header-inner" class="inner">
       <a id="main-nav-toggle" class="nav-icon" href="javascript:;"></a>
       <a id="logo" class="logo<%=(theme.logo_text?' logo-text':'')%>" href="<%- url_for('/') %>"><%=(theme.logo_text?theme.logo_text:'')%></a>
+      <a id="subtitle-text" class=subtitle href="<%- url_for('/') %>"><%=(theme.subtitle_text?theme.subtitle_text:'')%></a>
       <nav id="main-nav">
-        <% for (var i in theme.menu){ %>
-          <a class="main-nav-link" href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
-        <% } %>
-      </nav>
-      <nav id="sub-nav">
-        <div id="search-form-wrap">
-          <%- search_form({button: '&#xF002;'}) %>
-        </div>
+       <ul> <% for (var i in theme.menu){ %>
+        <% if(i!= "About"){ %>
+            <li class="menu-li"><a class="main-nav-link" href="<%- url_for(theme.menu[i]) %>"><%= i %></a></li>
+            <% } else { %> 
+              <li class="menu-li"><a class="main-nav-link" href="about/about.html "><%= i %></a></li>
+            <% } %>
+          <% } %>
+        </ul>
       </nav>
     </div>
   </div>
