@@ -1,1 +1,0 @@
-Hero theme Caseshow,a hero theme that designed for designer.
