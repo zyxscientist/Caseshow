@@ -1,5 +1,5 @@
 .article
-  margin: 00px 0px 10px 0px
+  margin: 0px 0px 10px 0px
 
 .article-inner
   position: relative
@@ -8,6 +8,7 @@
   padding-bottom: 11px
   //article box area shadow
   border: 1px solid color-border
+  background: #fff
   -webkit-box-shadow: 0 1px 4px 0 rgba(0,0,0,0.14)
   -webkit-border-radius: 2px
   box-shadow: 0 1px 4px 0 rgba(0,0,0,0.14)
@@ -15,6 +16,11 @@
   @media mq-mobile
     width: auto
     margin: 0 auto 15px auto
+
+div.article-inner:hover
+  -webkit-box-shadow: 0 1px 20px 0 rgba(0,0,0,0.3)
+  box-shadow: 0 1px 20px 0 rgba(0,0,0,0.3)
+
 
 // this css is for the inner pages, the above one for the 
 // entry box.
