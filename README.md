@@ -29,8 +29,10 @@ Grunt 0.4+
 一般直接安装都没有问题，如果出现问题请自行google。
 
 #### 升级
+```
 cd themes/caseshow
 git pull
+```
 
 #### 设置
 
