@@ -1,7 +1,7 @@
 #Caseshow
 ![desktop](http://7xrjhy.com1.z0.glb.clouddn.com/desktopdemo.png)
 
-Caseshow是基于大神[Ruipeng Zhang](https://github.com/ppoffice)为Hexo开发的一套响应式模板开发的[minos](https://github.com/ppoffice/hexo-theme-minos)而重新设计的，或许你会发现，我并不是Fork过来的，而是自己删掉了origin重新commit到自己的repository里面。没错，一个月前的我还不会用Github，所以在我发现了这个简洁优雅的主题之后直接就下载了下来，然后非常开心地打开<!--more-->sublime就改了起来，等到minos以及被改成Caseshow这个样子之后一切看起来都迟了，谨以此文说明一下以及道声歉，这都因为我的无知造成的。
+Caseshow是基于大神[Ruipeng Zhang](https://github.com/ppoffice)为Hexo开发的一套响应式模板开发的[minos](https://github.com/ppoffice/hexo-theme-minos)而重新设计的，或许你会发现，我并不是Fork过来的，而是自己删掉了origin重新commit到自己的repository里面。没错，一个月前的我还不会用Github，所以在我发现了这个简洁优雅的主题之后直接就下载了下来，然后非常开心地打开sublime就改了起来，等到minos以及被改成Caseshow这个样子之后一切看起来都迟了，谨以此文说明一下以及道声歉，这都因为我的无知造成的。
 
 ---
 ### 入正题吧~
