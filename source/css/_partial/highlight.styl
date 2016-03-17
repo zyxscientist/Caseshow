@@ -1,21 +1,26 @@
 $code-block
   margin: 0
-  font-size: 14px
-  background: #23241f
+  font-size: 16px
+  background: #ededf0
   padding: 15px 0
   overflow: auto
-  color: #fff
+  color: #333
   line-height: font-size * line-height
 
 $line-numbers
-  color: #666
+  color: #333
   font-size: 0.85em
 
-.article-entry
+.article-entry-pages
+  clearfix()
+  color: color-default
+  padding: 40px 150px 0 150px
+  @media mq-mobile
+    padding: 40px 20px 0 20px
   pre, code
     font-family: font-mono
   code
-    background: #f2f2f2
+    background: #ededf0
     padding: 0 0.3em
   pre
     @extend $code-block
