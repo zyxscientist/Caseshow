@@ -12,11 +12,6 @@
       <div class="article-tag-list-link-<%= post.color %>">
             <%- partial('post/tag') %>
           </div>
-      <% if (post.comments && config.disqus_shortname){ %>
-        <div class="article-comment-link-wrap">
-          <a href="<%- post.permalink %>#disqus_thread" class="article-comment-link"><%= __('article.comments') %></a>
-        </div>
-      <% } %>
     </div>
     <div class="article-entry-pages" itemprop="articleBody">
       <% if (post.excerpt && index){ %>
@@ -41,7 +36,7 @@
     <%- partial('post/nav') %>
   <% } %>
 </article>
-
+<%- partial('after-footer') %>
 <% if (!index && post.comments && config.disqus_shortname){ %>
 <section id="comments">
   <div id="disqus_thread">
