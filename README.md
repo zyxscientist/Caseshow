@@ -84,6 +84,8 @@ Caseshow保留minos的自适应功能。
 
 ![mobile](http://7xrjhy.com1.z0.glb.clouddn.com/demomobile.png)
 
+3月20号更新添加上对tablet的响应：）
+![tablet](http://7xrjhy.com1.z0.glb.clouddn.com/tabletdemo.png)
 
 ---
  好了，最后，感谢你使用Caseshow。
