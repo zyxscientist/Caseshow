@@ -26,6 +26,7 @@ Caseshow是基于大神[Ruipeng Zhang](https://github.com/ppoffice)为Hexo开发
 ``` 
 $ git clone https://github.com/zyxscientist/Caseshow.git
 ```
+**下载后请记得将 #_config_.yml前面的#号后后面多出来的_删掉，最后得到配置文件 config.yml。**
 
 ### 要求
 Hexo 3.0+

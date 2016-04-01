@@ -1,0 +1,18 @@
+# Header
+logo_text: Zyxsicentist
+subtitle_text: Interesting things
+menu:
+  Home: /
+  Archives: archives
+  Categories: categories
+  Tags: tags
+  About: about
+
+# Content
+excerpt_link: Read More
+toc: false #  Whether to show the table of contents in articles
+fancybox: true
+
+# Miscellaneous
+google_analytics: #adding your ID here
+favicon: /favicon.ico #get yourself a favicon and put it in the source floder
