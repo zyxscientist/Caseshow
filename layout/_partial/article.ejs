@@ -1,5 +1,5 @@
 <article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %> + post-box pure-u-1 pure-u-md-2-3 pure-u-lg-<%= post.size %>" itemscope itemprop="blogPost">
-    <div class="article-inner"> 
+  <div class="article-inner"> 
       <%- partial('post/gallery') %>
         <% if (post.link || post.title){ %>
           <header class="article-header">
@@ -33,16 +33,16 @@
         <%- toc(post.content) %>
       </div>
     <% } %>
-  </div>
+    </div>
     <% if (!index){ %>
       <%- partial('post/nav') %>
     <% } %>
-</article>
+  </article>
 
-<% if (!index && post.comments && config.disqus_shortname){ %>
-<section id="comments">
+  <% if (!index && post.comments && config.disqus_shortname){ %>
+  <section id="comments">
   <div id="disqus_thread">
     <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
   </div>
-</section>
-<% } %>
+  </section>
+  <% } %>

@@ -1,3 +1,5 @@
+@import "_variables"
+
 .article
   margin: 0px 0px 10px 0px
 
@@ -32,11 +34,30 @@ div.article-inner:hover
 .article-inner-pages
   position: relative
   letter-spacing: 0em;
-  float: left
-  margin-bottom: 15px 
-  width: auto
+  margin-bottom: 15px
+  margin-top: -30% 
+  margin-left: 5%
+  padding-top: 5%
+  padding-bottom: 5%
+  background: #fff
+  width: 900px
+  z-index: 98
+  -webkit-box-shadow: 0 1px 6px 0 rgba(0,0,0,0.1)
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  box-shadow: 0 1px 6px 0 rgba(0,0,0,0.1)
   @media mq-mobile
     width: auto
+    margin-top: 0%
+    margin-left: 0%
+    padding-top: 0%
+    padding-bottom: 0%
+    background: color-background
+    -webkit-box-shadow: 0 0px 0px 0 rgba(0,0,0,0)
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    box-shadow: 0 0px 0px 0 rgba(0,0,0,0)
+
 
 .article-meta
   clearfix()
@@ -505,10 +526,8 @@ a.article-title
 
 .article-gallery
   background: #fbfbfb
-  position: relative
 
 .article-gallery-photos
-  position: relative
   overflow: hidden
 
 .article-gallery-img
@@ -530,13 +549,11 @@ a.article-title
 
 .article-gallery-img-pages
   margin: 0 auto
-  align: center
   display: none
   margin-bottom: 40px
   &:first-child
     display: block
   &.loaded
-    position: absolute
     display: block
   img
     display: block
@@ -544,7 +561,13 @@ a.article-title
     height: 100%
     overflow:hidden
     margin: 0 auto
+    transition: -webkit-box-shadow .25s .25s ease-in-out, box-shadow .25s .25s ease-in-out
 
+a.article-gallery-img-pages:hover
+  -webkit-box-shadow: 0px 1px 15px 0 rgba(0,0,0,0.3)
+  box-shadow: 0px 1px 15px 0 rgba(0,0,0,0.3)
+  position: relative
+  z-index: 99
     
 
 
