@@ -22,7 +22,8 @@
   }
 
   // Mobile nav
-  $('#main-nav-toggle').click(function () {
-    $('#header').toggleClass('mobile-on');
+  $(document).ready(function(){
+    $('.nav-icon').click(function (event) {
+      $('#header').toggleClass('mobile-on');});
   });
 })(jQuery);
