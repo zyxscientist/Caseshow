@@ -1,3 +1,4 @@
+<% if (post.tag == "download"){ %>
 <article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %> + post-box pure-u-1 pure-u-md-2-3 pure-u-lg-<%= post.size %>" itemscope itemprop="blogPost">
   <div class="article-inner"> 
       <%- partial('post/gallery') %>
@@ -8,7 +9,7 @@
         <% } %>
         <div class="article-meta">
           <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
-            <% if (!index || post.tags.length){ %>
+            <% if (!index || post.tags){ %>
               <div class="article-tag-list-link-<%= post.color %>">
                 <%- partial('post/tag') %>
               </div>
@@ -46,4 +47,4 @@
   </div>
   </section>
   <% } %>
-
+<% } %>
