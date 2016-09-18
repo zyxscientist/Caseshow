@@ -7,7 +7,7 @@ https://github.com/yahoo/pure/blob/master/LICENSE.md
 /*csslint regex-selectors:false, known-properties:false, duplicate-properties:false*/
 
 .pure-g {
-    letter-spacing: -0.31em; /* Webkit: collapse white-space between units */
+    letter-spacing: 0em; /* Webkit: collapse white-space between units */
     *letter-spacing: normal; /* reset IE < 8 */
     *word-spacing: -0.43em; /* IE < 8: collapse white-space between units */
     text-rendering: optimizespeed; /* Webkit: fixes text-rendering: optimizeLegibility */
